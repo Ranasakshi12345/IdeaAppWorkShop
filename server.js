@@ -15,7 +15,7 @@ const app = express();
  */
 
 mongoose.connect(dbConfig.DB_URL);
-const db = mongoose.connection ;
+const db = mongoose.connection;
 
 db.on("error", ()=>{
     console.log("Error while connecting to DB");
